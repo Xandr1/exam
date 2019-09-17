@@ -1,0 +1,83 @@
+@import "reset";
+@import "adaptive";
+
+.person {
+    position: relative;
+    width: 200px;
+    padding: 10px 10px 277px 10px;
+    
+    
+
+    &__name {
+        font-family: Arial;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        color: #2F4F4F;
+        font-weight: 600;
+    }
+
+    &___photo {
+        width: 220px;
+        height:220px;
+
+    }
+    &__img {
+        width: 200px;
+        height:200px;
+        object-position: center;
+        border-radius: 50%;
+    }
+
+    &__extra {
+        display: none;
+    }
+
+    &__rank {
+        position: absolute; 
+        top: 84px;
+        left: 158px;
+        font-size: 16px;
+        text-align: center;
+        line-height: 32px;
+        width: 32px;
+        font-weight: bold; /* в макеті не вказано, але виглядає як болд */
+        color: #8B0000;
+        border-radius: 50%;
+        background-color: white;
+    }
+
+    &:hover {
+        background-color: #EEEEEE;
+        border-radius: 10px;
+        z-index: 2;
+        transform: scale(1.2);
+        transition: 1s;
+
+        .person__extra {
+            display: block;
+            position: static;
+            font-size: 18px;
+            line-height: 40px;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        .extra__sport::after  {
+            content: ", $";
+        }
+
+        .extra__pay::after {
+            content: "M";
+        }
+
+        .person__img {
+            border-radius: 60px;
+            transition: 1s;
+      }
+
+      &:not(:hover) {
+        transition: scale 1s;
+    }
+  }
+}

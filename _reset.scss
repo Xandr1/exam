@@ -1,0 +1,19 @@
+body {
+    
+    font-family: Arial, sans-serif;
+}
+
+p {
+    margin: 0;
+}
+
+/* people задається в даному випадку по суті всій сторінці, 
+тому їх зручно імпортувати разом а adaptive до styles */
+.people {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(3, 240px);
+    margin-top: 30px;
+    grid-gap: 30px;
+    justify-content: center;
+}
