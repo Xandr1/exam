@@ -5,8 +5,7 @@
     position: relative;
     width: 200px;
     padding: 10px 10px 277px 10px;
-    
-    
+    transition: transform 1s;
 
     &__name {
         font-family: Arial;
@@ -75,9 +74,5 @@
             border-radius: 60px;
             transition: 1s;
       }
-
-      &:not(:hover) {
-        transition: scale 1s;
-    }
   }
 }

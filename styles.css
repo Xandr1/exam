@@ -28,6 +28,7 @@ p {
   position: relative;
   width: 200px;
   padding: 10px 10px 277px 10px;
+  transition: transform 1s;
 }
 .person__name {
   font-family: Arial;
@@ -88,9 +89,6 @@ p {
 .person:hover .person__img {
   border-radius: 60px;
   transition: 1s;
-}
-.person:hover:not(:hover) {
-  transition: scale 1s;
 }
 
 /*# sourceMappingURL=styles.css.map */
